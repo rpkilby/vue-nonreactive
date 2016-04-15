@@ -1,6 +1,7 @@
 # vue-nonreactive
 
 [![Build Status](https://travis-ci.org/rpkilby/vue-nonreactive.svg?branch=master)](https://travis-ci.org/rpkilby/vue-nonreactive)
+[![codecov.io](https://codecov.io/github/rpkilby/vue-nonreactive/coverage.svg?branch=master)](https://codecov.io/github/rpkilby/vue-nonreactive?branch=master)
 
 
 Disable Vue reactivity for a given object. If you're using this,
