@@ -1,5 +1,7 @@
 # vue-nonreactive
 
+[![Build Status](https://travis-ci.org/rpkilby/vue-nonreactive.svg?branch=master)](https://travis-ci.org/rpkilby/vue-nonreactive)
+
 
 Disable Vue reactivity for a given object. If you're using this,
 you may want to rethink your data model. However, this plugin is
