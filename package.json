@@ -1,0 +1,33 @@
+{
+  "name": "vue-nonreactive",
+  "version": "0.0.1",
+  "description": "Vue.js plugin that allows you to disable reactivity on an object",
+  "main": "vue-nonreactive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpkilby/vue-nonreactive.git"
+  },
+  "keywords": [
+    "vue",
+    "nonreactive",
+    "unobserve"
+  ],
+  "author": "Ryan P Kilby <rpkilby@ncsu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpkilby/vue-nonreactive/issues"
+  },
+  "homepage": "https://github.com/rpkilby/vue-nonreactive#readme",
+  "jspm": {
+    "format": "esm"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.2",
+    "eslint": "^2.7.0",
+    "eslint-config-itng": "github:itng/eslint-config-itng#0.0.1",
+    "vue": "^1.0.21"
+  }
+}

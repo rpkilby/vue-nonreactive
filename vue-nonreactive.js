@@ -1,0 +1,37 @@
+/**
+ * Disable Vue reactivity for a given object. If you're using this,
+ * you may want to rethink your data model. However, this plugin is
+ * useful in a small subset of cases where you need to prevent vue
+ * from walking nested properties that do not represent application
+ * state. eg, your model has a reference to a data store or cache.
+ *
+ * Example:
+ *
+ *     new Vue({
+ *         el: 'body',
+ *         data() {
+ *             const instance = postStore.fetch({include: ['author', 'comments.author']})
+ *             Vue.nonreactive(instance._cache)
+ *
+ *             return {post: instance, },
+ *         },
+ *         ...
+ *     });
+ */
+
+
+/* eslint-disable no-param-reassign */
+function install(Vue) {
+    Vue.nonreactive = function nonreactive(value) {
+        const Observer = (new Vue()).$data
+                                    .__ob__
+                                    .constructor;
+
+        // Set dummy observer on value
+        value.__ob__ = new Observer({});
+        return value;
+    };
+}
+
+
+export default install;
