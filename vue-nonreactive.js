@@ -1,7 +1,7 @@
 /**
  * Disable Vue reactivity for a given object. If you're using this,
  * you may want to rethink your data model. However, this plugin is
- * useful in a small subset of cases where you need to prevent vue
+ * useful in a small subset of cases where you need to prevent Vue
  * from walking nested properties that do not represent application
  * state. eg, your model has a reference to a data store or cache.
  *
@@ -32,6 +32,11 @@ function install(Vue) {
         return value;
     };
 }
+
+
+// auto install
+if (typeof window !== 'undefined' && window.Vue)
+    window.Vue.use(install);
 
 
 export default install;
