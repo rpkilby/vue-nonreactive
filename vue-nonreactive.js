@@ -35,6 +35,7 @@ function install(Vue) {
 
 
 // auto install
+/* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue)
     window.Vue.use(install);
 
