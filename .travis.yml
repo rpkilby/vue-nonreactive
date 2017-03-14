@@ -8,6 +8,9 @@ env:
   - VUE="vue@1"
   - VUE="vue@2"
 
+before_install:
+  - if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
+
 install:
   - npm install $VUE
   - npm install
