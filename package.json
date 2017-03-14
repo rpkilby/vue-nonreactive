@@ -33,6 +33,6 @@
     "eslint": "^2.7.0",
     "eslint-config-itng": "github:itng/eslint-config-itng#0.0.1",
     "tap": "^5.7.1",
-    "vue": "^1.0.21"
+    "vue": "*"
   }
 }
