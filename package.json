@@ -1,6 +1,6 @@
 {
   "name": "vue-nonreactive",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Vue.js plugin that allows you to disable reactivity on an object",
   "main": "vue-nonreactive.js",
   "scripts": {
