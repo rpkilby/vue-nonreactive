@@ -36,3 +36,11 @@ reactive property. Any nested objects are then also observed. However, Vue
 will skip observation if it detects that the object is already observed.
 We can make an object non-reactive by assigning a dummy observer, duping
 Vue's observer detection.
+
+## Release process
+
+```shell
+$ npm version <update type>
+$ git push --follow-tags
+$ npm publish
+```
