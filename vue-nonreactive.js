@@ -22,11 +22,11 @@
 
 /* eslint-disable no-param-reassign */
 function install(Vue) {
-    Vue.nonreactive = function nonreactive(value) {
-        const Observer = (new Vue()).$data
-                                    .__ob__
-                                    .constructor;
+    const Observer = (new Vue()).$data
+                                .__ob__
+                                .constructor;
 
+    Vue.nonreactive = function nonreactive(value) {
         // Set dummy observer on value
         value.__ob__ = new Observer({});
         return value;
