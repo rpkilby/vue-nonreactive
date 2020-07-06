@@ -28,7 +28,12 @@ function install(Vue) {
 
     Vue.nonreactive = function nonreactive(value) {
         // Set dummy observer on value
-        value.__ob__ = new Observer({});
+        Object.defineProperty(value, '__ob__', {
+            value: new Observer({}),
+            enumerable: false,
+            writable: true,
+            configurable: true
+        });
         return value;
     };
 }
